@@ -36,3 +36,5 @@ num = 3 ^ 2  # '^' is a logical 'or' operator. Will come back to this in the fut
 
 # num = 3 ** 2
 print(num)
+
+# this is a test
