@@ -71,3 +71,11 @@ print(cars.reverse())
 
 # Finding length of list
 print(len(cars))  # do I have to put print everytime?
+
+
+# In class example that we spoke about how Python does things for you
+
+name = "Phil"
+print(name)
+print(name)
+# instead of PhilPhil in other languages
