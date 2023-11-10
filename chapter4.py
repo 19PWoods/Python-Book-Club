@@ -1,4 +1,4 @@
-# For Loops
+# # For Loops
 # magicians = ['alice', 'david', 'caroline']
 # for magician in magicians:
 #     print(magician)
@@ -69,17 +69,29 @@
 
 # # friend_foods = my_foods (this does not work, Python reads this as same list)
 
-# Defining a tuple - use () instead of []
-dimensions = (200, 50)
-print(dimensions[0])
-print(dimensions[1])
-# dimensions[0] = 250 this does not work, you can't change a tuple!!
-# in order to modify a tuple you must change the entire tuple
-print("Original dimensions")
-for dimension in dimensions:
-    print(dimensions)
+# # Defining a tuple - use () instead of []
+# dimensions = (200, 50)
+# print(dimensions[0])
+# print(dimensions[1])
+# # dimensions[0] = 250 this does not work, you can't change a tuple!!
+# # in order to modify a tuple you must change the entire tuple
+# print("Original dimensions")
+# for dimension in dimensions:
+#     print(dimensions)
 
-dimensions = (400, 100)
-print("\nModified dimensions:")
-for dimension in dimensions:
-    print(dimensions)
+# dimensions = (400, 100)
+# print("\nModified dimensions:")
+# for dimension in dimensions:
+#     print(dimensions)
+
+
+# Loop Example for class
+classmates = ['Phil', 'Aspen', 'Olivia', 'Mari',
+              'Oakley', 'Jacob', 'Joe', 'Bob', 'Crystal', 'Taylor']
+print(classmates)
+
+for mates in classmates:
+    if mates == 'Phil':
+        print(f"Great For Loop, {mates.title()}!\n")
+    else:
+        print(f"That For Loop Stinks, {mates.title()}!\n")
