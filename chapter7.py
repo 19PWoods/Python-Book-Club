@@ -84,11 +84,11 @@
 #     print(current_number)
 
 
-# ASCHII characters
-growing_string = ""
-for number in range(32, 127):
-    growing_string = growing_string + chr(number)
-print(f"{growing_string}\n")
+# # ASCHII characters
+# growing_string = ""
+# for number in range(32, 127):
+#     growing_string = growing_string + chr(number)
+# print(f"{growing_string}\n")
 
 # pg. 116 modulo...  which is pretty straight-forward
 
@@ -104,3 +104,19 @@ print(f"{growing_string}\n")
 # 7 is prime
 # 11 is prime
 # Note: every integer is divisible by 1, so this condition does not have to be tested
+
+import numpy
+prime_numbers = []
+num = 2
+division = list(range(2, 11))
+remainders = []
+for value in division:
+    remainders.append(num % value)
+# print(remainders)
+# print(f"The product of the remainders is {numpy.prod(remainders)}!")
+if numpy.prod(remainders) != 0:
+    prime_numbers.append(num)
+print(prime_numbers)
+# print(remainders)
+
+# print(division)
