@@ -19,19 +19,21 @@
 
 # top of your program
 import timeit
-import numpy as np
+import numpy
 # user input
 start_time = timeit.default_timer()
 # number crunching and such
 prime_numbers = []
-num = 2
-division = range(2, 11)
-while range(prime_numbers) < 101:
-    for value in range(division):
-        remainders = num % value
-        if np.prod(remainders) != 0:
-            prime_numbers.append(num)
+while len(prime_numbers) < 101:
+    num = 2
+    division = list(range(2, 11))
+    remainders = []
+    for value in division:
+        remainders.append(num % value)
+    if numpy.prod(remainders) != 0:
+        prime_numbers.append(num)
     num += 1
+print(prime_numbers)
 # print results and end of program
 stop_time = timeit.default_timer()
 print('Runtime (seconds): ', stop_time - start_time)
