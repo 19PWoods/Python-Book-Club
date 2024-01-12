@@ -15,7 +15,7 @@
 # 5 is divisible by itself and 1
 # 7 is prime
 # 11 is prime
-# Note: every integer is divisible by 1, so this condition does not have to be tested
+# Note: every integer is divisible by 1.
 
 # top of your program
 import timeit
@@ -23,10 +23,10 @@ import numpy
 # user input
 start_time = timeit.default_timer()
 # number crunching and such
-prime_numbers = []
-while len(prime_numbers) < 101:
-    num = 2
-    division = list(range(2, 11))
+prime_numbers = [2, 3, 5, 7]
+num = 10
+division = list(range(2, 11))
+while len(prime_numbers) < 100000:
     remainders = []
     for value in division:
         remainders.append(num % value)
@@ -37,18 +37,4 @@ print(prime_numbers)
 # print results and end of program
 stop_time = timeit.default_timer()
 print('Runtime (seconds): ', stop_time - start_time)
-
-
-# # top of your program
-# import timeit
-# # user input
-# start_time = timeit.default_timer()
-# # number crunching and such
-# prime_numbers = []
-# num = 2
-# while range(prime_numbers) > 101:
-#     for value in range(division):
-#         if num % value ==
-# # print results and end of program
-# stop_time = timeit.default_timer()
-# print('Runtime (seconds): ', stop_time - start_time)
+print('\nLength of prime_numbers"', len(prime_numbers))

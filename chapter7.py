@@ -107,13 +107,13 @@
 
 import numpy
 prime_numbers = []
-num = 2
+num = 3
 division = list(range(2, 11))
 remainders = []
 for value in division:
     remainders.append(num % value)
-# print(remainders)
-# print(f"The product of the remainders is {numpy.prod(remainders)}!")
+print(remainders)
+print(f"The product of the remainders is {numpy.prod(remainders)}!")
 if numpy.prod(remainders) != 0:
     prime_numbers.append(num)
 print(prime_numbers)
