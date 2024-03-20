@@ -1,7 +1,7 @@
 # Functions!!
 
 # def greet_user():
-#     """Display a simple greeting.""" # docstring, describes what the functiono does
+#     """Display a simple greeting.""" # docstring, describes what the function does
 #     print("Hello!")
 # greet_user()
 
